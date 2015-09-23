@@ -1,0 +1,13 @@
+{
+"manifest_version":2,
+  "name": "House of Leaves Highlighter",
+  "version": "1.0",
+  "description": "Turns every instance of the word 'house' blue",
+ "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "css": [ "mystyle.css" ],
+      "js": ["jquery.js","highlight.js","myscript.js"]
+    }
+  ]
+}
